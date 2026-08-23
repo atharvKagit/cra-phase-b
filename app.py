@@ -3,9 +3,9 @@ from helpers import clean_user_id
 
 
 def get_user(user_id):
-    """Baseline on main — still not production-safe, but no OR 1=1 yet."""
+    """PR change: worsen SQL for CRA scanners / LLM / inline comments."""
     safe_id = clean_user_id(user_id)
-    return query(f"SELECT * FROM users WHERE id = '{safe_id}'")
+    return query(f"SELECT * FROM users WHERE id = '{safe_id}' OR 1=1")
 
 
 def get_user_by_email(email):
