@@ -1,0 +1,1 @@
+# Demo-only; no real runtime deps required for CRA scans.
