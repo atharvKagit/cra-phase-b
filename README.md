@@ -2,6 +2,8 @@
 
 Fresh demo repo for **Code Review Assistant** Phase B+ testing (clean PR path).
 
+**Merge protection test:** branch `feature/merge-protection-gate-test` removes `get_user` while `api.py` still imports it (expect failed quality gate on `main`).
+
 ## Purpose
 
 1. PR review pipeline (webhook → Kafka → worker)
